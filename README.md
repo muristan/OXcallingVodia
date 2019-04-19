@@ -9,6 +9,7 @@ To register the app in MacOS you need OXcallingVodia.zip
 Unzip the file OXcallingVodia.zip and put the app into your application folder.
 
 First use
+
 Open a browser and insert: callto:set https://yourpbxaddress extensiondomain yournumber yourpassword
 This will create the configuration file /Users/$USER/.config/OXcallingVodia/config.conf
 When your browser asks if use OXcallingVodia click yes.
