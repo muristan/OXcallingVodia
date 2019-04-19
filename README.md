@@ -1,6 +1,6 @@
 # OXcallingVodia
 
-This application is a click2dial app for Open Xchange App Suite and Vodia PBX. It works on Mac=S on all web browsers.
+This application is a click2dial app for Open Xchange App Suite and Vodia PBX. It works on MacOS on all web browsers.
 
 
 To register the app in MacOS you need OXcallingVodia.zip
