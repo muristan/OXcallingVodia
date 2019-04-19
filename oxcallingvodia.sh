@@ -38,7 +38,7 @@ L2=$((L1-6))
 PHONENUMBER=${1:7:L2}
 # echo Nummer: $PHONENUMBER
 PHONENUMBER=${PHONENUMBER/+/00}
-URL="$PBX/remote_call.htm?user=$USERID%40localhost&dest=$PHONENUMBER&auth=$USERID%40localhost%3A$PASSWORD&connect=true"
+URL="$PBX/remote_call.htm?user=$USERID%40$DOMAIN&dest=$PHONENUMBER&auth=$USERID%40$DOMAIN%3A$PASSWORD&connect=true"
 open $URL
 
 
