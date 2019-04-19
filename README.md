@@ -22,7 +22,8 @@ The link callto:[phonenumber] will be handled by the OXcallingVodia app and pass
 
 
 To build the app
-You need the MacOS developer tool Platypus to create a native Mac applications from the bash script oxcallingvodia.sh
+
+You need the free MacOS developer tool Platypus to create a native Mac applications from the bash script oxcallingvodia.sh
 In the package created by Platypus there is a file Info.plist - but in this file are the keys for Url handling missing. 
 So overwrite the Info.plist in the package with the Info.plist here.
 
