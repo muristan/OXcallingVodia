@@ -8,7 +8,7 @@ To register the app in MacOS you need OXcallingVodia.zip
 
 Unzip the file OXcallingVodia.zip and put the app into your application folder.
 
-First use
+Configuration
 
 Open a browser and insert: callto:set https://yourpbxaddress extensiondomain yournumber yourpassword
 This will create the configuration file /Users/$USER/.config/OXcallingVodia/config.conf
@@ -25,6 +25,24 @@ To build the app
 
 You need the free MacOS developer tool Platypus to create a native Mac applications from the bash script oxcallingvodia.sh
 In the package created by Platypus there is a file Info.plist - but in this file are the keys for Url handling missing. 
-So overwrite the Info.plist in the package with the Info.plist here.
+
+Add the folowing lines to Info.plist (use editors such as PLIST Editor).
+
+	<key>CFBundleIdentifier</key>
+    <string>org.muristan.OXcallingVodia</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>Pass To OXcallingVodia</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>callto</string>
+            </array>
+        </dict>
+    </array> 
+
+
+OR overwrite the Info.plist in the package CREATED BY PLATYBUS with the Info.plist here.
 
 Have fun!
