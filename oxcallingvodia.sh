@@ -32,11 +32,8 @@ fi
 
 . /Users/$USER/.config/OXcallingVodia/config.conf
 L1=${#1}
-# echo Länge ganzer Ausdruck: $L1 
 L2=$((L1-6))
-# echo Länge Nummer +1: $L2 
 PHONENUMBER=${1:7:L2}
-# echo Nummer: $PHONENUMBER
 PHONENUMBER=${PHONENUMBER/+/00}
 URL="$PBX/remote_call.htm?user=$USERID%40$DOMAIN&dest=$PHONENUMBER&auth=$USERID%40$DOMAIN%3A$PASSWORD&connect=true"
 open $URL
