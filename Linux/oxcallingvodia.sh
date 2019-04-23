@@ -15,12 +15,12 @@ then
    USERID=${ARG[3]}
    PASSWORD=${ARG[4]}
 
-   mkdir -p /Users/$USER/.config/OXcallingVodia
-   echo "#!/bin/sh" > /Users/$USER/.config/OXcallingVodia/config.conf
-   echo "PBX=$PBX" >> /Users/$USER/.config/OXcallingVodia/config.conf
-   echo "DOMAIN=$DOMAIN" >> /Users/$USER/.config/OXcallingVodia/config.conf
-   echo "USERID=$USERID" >> /Users/$USER/.config/OXcallingVodia/config.conf
-   echo "PASSWORD=$PASSWORD" >> /Users/$USER/.config/OXcallingVodia/config.conf
+   mkdir -p /home/$USER/.config/OXcallingVodia
+   echo "#!/bin/sh" > /home/$USER/.config/OXcallingVodia/config.conf
+   echo "PBX=$PBX" >> /home/$USER/.config/OXcallingVodia/config.conf
+   echo "DOMAIN=$DOMAIN" >> /home/$USER/.config/OXcallingVodia/config.conf
+   echo "USERID=$USERID" >> /home/$USER/.config/OXcallingVodia/config.conf
+   echo "PASSWORD=$PASSWORD" >> /home/$USER/.config/OXcallingVodia/config.conf
    exit
 fi
 
